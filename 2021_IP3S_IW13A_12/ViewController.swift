@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var txtInput1: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,10 @@ class ViewController: UIViewController {
         label.text = "テスト"
     }
 
+    //  ボタンが押された時
+    @IBAction func btnClick(_ sender: Any) {
+        label.text = txtInput1.text
+    }
     
 
 }
