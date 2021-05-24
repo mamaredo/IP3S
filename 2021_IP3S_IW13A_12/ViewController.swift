@@ -28,18 +28,27 @@ class ViewController: UIViewController {
         // Ⅲ: 戻される値をクラス・関数で型変換
 
         var total: Int = 0
-        
+        var flag: Bool = false
+//        var errMessage: String = ""
         // オプショナルバインディング
         // if文 条件内に変数宣言と代入を記述
         // 代入した際に、nilだったらfalse
         if let intInput1 = Int(txtInput1.text!) {
             total += intInput1
+        } else {
+            flag = true
+//            errMessage = "1つ目の入力に誤りがあります。"
         }
         if let intInput2 = Int(txtInput2.text!) {
             total += intInput2
+        } else {
+            flag = true
+//            errMessage = "2つ目の入力に誤りがあります。"
         }
         
-        label.text = total.description
+        label.text = flag != true
+        ? total.description
+        : "error!"
     }
     
 
