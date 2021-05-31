@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
         var total: Int = 0
         var flag: Bool = false
-//        var errMessage: String = ""
+        var errMessage: String = ""
         // オプショナルバインディング
         // if文 条件内に変数宣言と代入を記述
         // 代入した際に、nilだったらfalse
@@ -37,18 +37,18 @@ class ViewController: UIViewController {
             total += intInput1
         } else {
             flag = true
-//            errMessage = "1つ目の入力に誤りがあります。"
+            errMessage = "1つ目の入力に誤りがあります。"
         }
         if let intInput2 = Int(txtInput2.text!) {
             total += intInput2
         } else {
             flag = true
-//            errMessage = "2つ目の入力に誤りがあります。"
+            errMessage = "2つ目の入力に誤りがあります。"
         }
         
         label.text = flag != true
         ? total.description
-        : "error!"
+        : errMessage
     }
     
 
