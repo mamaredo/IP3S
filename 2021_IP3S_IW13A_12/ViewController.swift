@@ -51,6 +51,22 @@ class ViewController: UIViewController {
         : errMessage
     }
     
+    // SubViewが終了した時の処理
+    @IBAction override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+        // 戻ってきた時、処理しない
+    }
+    
+    // SubViewの表示前処理
+    // swift2.0 prepareForSegue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // 引数segueから、SubViewControllerを取得
+        let viewCon = segue.destination as! SubViewController
+        
+        // ViewControllerから値を仕掛ける
+        viewCon.strIn1 = txtInput1.text
+        viewCon.strIn2 = txtInput2.text
+    }
 
 }
 

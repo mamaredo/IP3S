@@ -9,6 +9,10 @@
 import UIKit
 
 class SubViewController: UIViewController {
+    
+    // 受け取り用変数
+    var strIn1: String?
+    var strIn2: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
