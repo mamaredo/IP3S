@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F3037E32664B686003B6AB2 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3037E22664B686003B6AB2 /* SubViewController.swift */; };
+		0F5586A42677302400497002 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5586A32677302400497002 /* MyClass.swift */; };
 		0FD8F4AA262D586400B10EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8F4A9262D586400B10EF4 /* AppDelegate.swift */; };
 		0FD8F4AC262D586400B10EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8F4AB262D586400B10EF4 /* ViewController.swift */; };
 		0FD8F4AF262D586400B10EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD8F4AD262D586400B10EF4 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		0F3037E22664B686003B6AB2 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		0F5586A32677302400497002 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		0FD8F4A6262D586400B10EF4 /* 2021_IP3S_IW13A_12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2021_IP3S_IW13A_12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD8F4A9262D586400B10EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD8F4AB262D586400B10EF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0FD8F4B2262D586500B10EF4 /* LaunchScreen.storyboard */,
 				0FD8F4B5262D586500B10EF4 /* Info.plist */,
 				0F3037E22664B686003B6AB2 /* SubViewController.swift */,
+				0F5586A32677302400497002 /* MyClass.swift */,
 			);
 			path = 2021_IP3S_IW13A_12;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5586A42677302400497002 /* MyClass.swift in Sources */,
 				0F3037E32664B686003B6AB2 /* SubViewController.swift in Sources */,
 				0FD8F4AC262D586400B10EF4 /* ViewController.swift in Sources */,
 				0FD8F4AA262D586400B10EF4 /* AppDelegate.swift in Sources */,

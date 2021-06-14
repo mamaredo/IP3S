@@ -13,9 +13,15 @@ class SubViewController: UIViewController {
     // 受け取り用変数
     var strIn1: String?
     var strIn2: String?
+    @IBOutlet weak var lblDisp: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        lblDisp.text = strIn1
+        
+        // 入力エリアの値を元に計算
+            
 
         // Do any additional setup after loading the view.
     }

@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
     
     // SubViewが終了した時の処理
-    @IBAction override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+    @IBAction func myUnwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
         // 戻ってきた時、処理しない
     }
     
