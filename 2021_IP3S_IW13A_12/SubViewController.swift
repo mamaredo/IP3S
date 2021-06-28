@@ -21,7 +21,22 @@ class SubViewController: UIViewController {
         lblDisp.text = strIn1
         
         // 入力エリアの値を元に計算
-            
+        
+        // MyClassのオブジェクト変数の生成
+        let myClass: MyClass = MyClass()
+        
+        if myClass.fncTypeCheck(strParam: strIn1!) {
+            // 数値変換に成功
+            if myClass.fncTypeCheck(strParam: strIn2!) {
+                // 数値変換に成功
+                lblDisp.text = myClass.getIntResult().description
+            } else {
+                lblDisp.text = myClass.getErrMsg()
+            }
+        } else {
+           // 数値変換に失敗
+           lblDisp.text = myClass.getErrMsg()
+        }
 
         // Do any additional setup after loading the view.
     }

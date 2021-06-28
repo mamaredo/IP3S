@@ -41,11 +41,11 @@ class ViewController: UIViewController {
         }
         if let intInput2 = Int(txtInput2.text!) {
             total += intInput2
-        } else {
+        } else if !flag {
             flag = true
             errMessage = "2つ目の入力に誤りがあります。"
         }
-        
+        if total == 0 { errMessage = "数値を入力してください" }
         label.text = flag != true
         ? total.description
         : errMessage

@@ -42,4 +42,9 @@ class MyClass {
     func getErrMsg() -> String {
         return errMsg
     }
+    
+    // intResult変数の内容を返す処理
+    func getIntResult() -> Int {
+        return intResult
+    }
 }
