@@ -47,7 +47,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Sn-z6-Hug">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="R32-kz-55B"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="R32-kz-55B">
+                            <connections>
+                                <action selector="btnAddClick:" destination="BYZ-38-t0r" id="iM3-ie-zuI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
